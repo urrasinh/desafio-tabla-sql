@@ -31,15 +31,15 @@ INSERT INTO post (id, nombre_usuario, fecha_creacion, contenido, descripcion, ti
 
 
 -- Crear una nueva tabla llamada “comentarios”, con los atributos id, fecha, hora de creación y contenido, que se relacione con la tabla posts.
-CREATE TABLE comentarios (id INT, fecha_creacion DATE, hora_creacion TIME, contenido VARCHAR(50), FOREIGN KEY (id) REFERENCES post(id));
+CREATE TABLE comentarios (id INT, post_id INT, fecha_creacion DATE, hora_creacion TIME, contenido VARCHAR(50), FOREIGN KEY (post_id) REFERENCES post(id));
 
 -- Crear 2 comentarios para el post de "Pamela" y 4 para "Carlos".
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (1, '2012-12-12', '00:00:00', 'Contenido de Pamela');
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (2, '2012-12-12', '00:00:00', 'Contenido de Pamela');
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (6, '2020-11-11', '23:59:59', 'Contenido de carlos');
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (6, '2020-11-11', '23:59:59', 'Contenido de carlos');
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (6, '2020-11-11', '23:59:59', 'Contenido de carlos');
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (6, '2020-11-11', '23:59:59', 'Contenido de carlos');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (1, 1, '2012-12-12', '00:00:00', 'Contenido de Pamela');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (2, 2, '2012-12-12', '00:00:00', 'Contenido de Pamela');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (3, 6, '2020-11-11', '23:59:59', 'Contenido de carlos');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (4, 6, '2020-11-11', '23:59:59', 'Contenido de carlos');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (5, 6, '2020-11-11', '23:59:59', 'Contenido de carlos');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (6, 6, '2020-11-11', '23:59:59', 'Contenido de carlos');
 
 
 
@@ -48,8 +48,8 @@ INSERT INTO post (id, nombre_usuario, fecha_creacion, contenido, descripcion, ti
 
 
 -- Ingresar 5 comentarios para el post de Margarita.
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (7, '2020-11-11', '23:59:59', 'Contenido de Margarita');
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (7, '2020-11-11', '23:59:59', 'Contenido de Margarita');
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (7, '2020-11-11', '23:59:59', 'Contenido de Margarita');
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (7, '2020-11-11', '23:59:59', 'Contenido de Margarita');
-INSERT INTO comentarios(id, fecha_creacion, hora_creacion, contenido) VALUES (7, '2020-11-11', '23:59:59', 'Contenido de Margarita');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (7, 7, '2020-11-11', '23:59:59', 'Contenido de Margarita');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (8, 7, '2020-11-11', '23:59:59', 'Contenido de Margarita');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (9, 7, '2020-11-11', '23:59:59', 'Contenido de Margarita');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (10, 7, '2020-11-11', '23:59:59', 'Contenido de Margarita');
+INSERT INTO comentarios(id, post_id, fecha_creacion, hora_creacion, contenido) VALUES (11, 7, '2020-11-11', '23:59:59', 'Contenido de Margarita');
