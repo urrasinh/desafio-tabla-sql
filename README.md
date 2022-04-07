@@ -1,11 +1,16 @@
-# desafio-tabla-sql
+# Desafio tabla SQL
 
 ## Instrucciones
+  
+  
+Ejecutar lineas de codigo terminal `SQL Shell`  
+Revisar si utiliza un Sistema de gestión de bases de datos distinto.  
+[Documentación Postgresql](https://www.postgresqltutorial.com/)
 
-Ejecutar lineas de codigo terminal SQL Shell
-revisar si utiliza un Sistema de gestión de bases de datos distinto.
-https://www.postgresqltutorial.com/
 
-` Convenciones ` 
-` INDEX  = nombre_tabla_nombre_columna_index` 
-` FOREING KEY = nombre_tabla_fk`
+
+> ⚠️ Recuerde las Convenciones de SQL ⚠️
+>      
+> INDEX  = nombre_tabla_nombre_columna_index  
+> FOREING KEY = nombre_tabla_fk
+
