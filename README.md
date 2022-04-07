@@ -12,6 +12,6 @@ Revisar si utiliza un Sistema de gestión de bases de datos distinto.
 > ⚠️ Recuerde las Convenciones de SQL ⚠️
 >      
 > INDEX  = nombre_tabla_nombre_columna_index  
-> FOREING KEY = nombre_tabla_fk
+> FOREING KEY = nombre_tabla_fk  
 > Tablas y columnas: escritas en plural, minusculas y sin ñ, simbolos o tildes.
 
